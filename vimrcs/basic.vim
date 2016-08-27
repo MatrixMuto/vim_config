@@ -39,12 +39,6 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Add Runtime Path
-set runtimepath+=~/.vim_runtime
-
-" Set pathogen path
-call pathogen#infect('~/.vim_runtime/bundle_1/{}')
-
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -55,6 +49,10 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" No catlog
+set nu "Show line number
+set cursorline "Show cursor line
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -62,6 +60,16 @@ set autoread
 set nobackup
 set nowb
 set noswapfile
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
+
+" Colorscheme
+set background=dark
+"colorscheme peaksea
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -84,6 +92,20 @@ set ai "Auto indent
 set si "Smart indent
 "set wrap "Wrap lines
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around, tabs, windows and buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
