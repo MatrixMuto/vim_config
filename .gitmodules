@@ -1,3 +1,6 @@
 [submodule "bundle_1/nerdtree"]
 	path = bundle_1/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle_1/YouCompleteMe"]
+	path = bundle_1/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
