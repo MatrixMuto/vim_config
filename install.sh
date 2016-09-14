@@ -3,13 +3,12 @@
 #更新时只需`git pull`就可以了
 echo `pwd` 
 
-if [ ! -d "~/.vim_runtime" ]; then
-  ln -s `pwd` ~/.vim_runtime
-  git submodule init
+if [ ! -e '~/.vim_runtime' ]; then
+  ln -s -T `pwd` ~/.vim_runtime
 fi
 
 cd ~/.vim_runtime || exit
-#cat ~/.vim_runtime/vimrcs/basic.vim > ~/.vimrc || exit
+
 echo 'set runtimepath+=~/.vim_runtime
 
 source ~/.vim_runtime/vimrcs/basic.vim
