@@ -4,3 +4,9 @@
 [submodule "bundle_1/YouCompleteMe"]
 	path = bundle_1/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle_1/lightline.vim"]
+	path = bundle_1/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "bundle_1/vim-pathogen"]
+	path = bundle_1/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
