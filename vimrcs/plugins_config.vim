@@ -11,12 +11,17 @@ call pathogen#helptags()
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1 "Show hidden files
 let g:NERDTreeWinSize=35
-autocmd vimenter * NERDTree
-
+nnoremap <F8> :NERDTree<CR>
 """""""""""""""""""""""""""""""""""""""""""
 " => lightline.vim
 """"""""""""""""""""""""""""""""""""""""""
-let g:lightline= {
+let g:lightline = {
     \ 'colorscheme': 'wombat',
     \ }
+
+""""""""""""""""""""""""""""""""""""""""""
+" => YouCompleteMe
+""""""""""""""""""""""""""""""""""""""""""
+nnoremap <F3> :YcmCompleter GoTo<CR>
+
 
