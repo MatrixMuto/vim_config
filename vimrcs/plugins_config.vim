@@ -10,7 +10,7 @@ call pathogen#helptags()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1 "Show hidden files
-let g:NERDTreeWinSize=35
+let g:NERDTreeWinSize=40
 nnoremap <F8> :NERDTree<CR>
 """""""""""""""""""""""""""""""""""""""""""
 " => lightline.vim
