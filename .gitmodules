@@ -10,3 +10,9 @@
 [submodule "bundle_1/vim-pathogen"]
 	path = bundle_1/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "bundle_1/vim-gitgutter"]
+	path = bundle_1/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle_1/dracula-theme"]
+	path = bundle_1/dracula-theme
+	url = https://github.com/dracula/vim.git
